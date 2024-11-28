@@ -1,6 +1,6 @@
 - name: variables Info
   hosts: localhost
-  var:
+  vars:
     course: ansible
     trainer: siva
     duration: 120hrs
