@@ -1,4 +1,4 @@
-- name: variables
+- name: variables Info
   hosts: localhost
   var:
     course: ansible
