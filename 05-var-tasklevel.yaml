@@ -5,7 +5,7 @@
     trainer: siva
     duration: 120hrs
   tasks:
-  - name: print info level1 
+  - name: print info with overriding 
     vars:
       course: Terraform
       trainer: manu
@@ -13,7 +13,7 @@
     ansible.builtin.debug:
       msg: "hi, i am learning {{course}}. The trainer is {{trainer}} and the duration is {{duration}}"
 
-      
-  - name: print info Normal
+
+  - name: print info without overriding
     ansible.builtin.debug:
       msg: "hi, i am learning {{course}}. The trainer is {{trainer}} and the duration is {{duration}}"
