@@ -1,6 +1,6 @@
 - name: Install nginx and start
   hosts: web
-  become yes: #to become root -b in adhoc command 
+  become: yes #to become root -b in adhoc command 
   tasks: 
   - name: "Install nginx" 
     ansible.builtin.dnf:
