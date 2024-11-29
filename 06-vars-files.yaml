@@ -1,8 +1,8 @@
-- name: taking variables from vars_yaml file
+- name: taking variables from files
   hosts: localhost
   vars_files:
   - vars.yaml
   tasks:
   - name: "printing variables info"
-    debug:
+    ansible.builtin.debug:
       msg: "Hi, We are learning {{course}} from Trainer {{trainer}}, Duration is {{duration}}."
