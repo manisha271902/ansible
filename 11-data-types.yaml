@@ -1,0 +1,16 @@
+- name: Data types
+  hosts: localhost
+  vars:
+    course: devops
+    Tools: #list
+    - Ansible
+    - Jenkins
+    - terraform
+    Experience: #map/dict
+      devops: 2
+      testing: 3
+    Realproject: true
+  tasks:
+  - name: Print the Info
+    ansible.buitin.debug:
+      msg: "course is {{course}} toolas are {{Tools}} experinece is {{Experience}} and is it real projhect {{Realproject}}"
