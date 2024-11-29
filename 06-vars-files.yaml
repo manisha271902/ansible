@@ -1,6 +1,6 @@
 - name: taking variables from vars_yaml file
   hosts: localhost
-  var_files:
+  vars_files:
   - vars.yaml
   tasks:
   - name: "printing variables info"
