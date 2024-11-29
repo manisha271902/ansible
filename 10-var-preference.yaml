@@ -4,10 +4,10 @@
     WISHES: "Good Luck from play variable"
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-  - name: WISHES
-    prompt: Enter your Wishes
-    private: false
+  # vars_prompt:
+  # - name: WISHES
+  #   prompt: Enter your Wishes
+  #   private: false
     
 
   tasks:
