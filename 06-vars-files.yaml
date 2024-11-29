@@ -5,4 +5,4 @@
   tasks:
   - name: "printing variables info"
     debug:
-      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+      msg: "Hi, We are learning {{course}} from Trainer {{trainer}}, Duration is {{duration}}."
