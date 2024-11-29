@@ -1,0 +1,13 @@
+- name: "Varibales from prompt"
+  hosts: localhost
+  vars_prompt:
+  - name: "username"
+    prompt: "What is your username"
+    private: false
+  - name: "Password"
+    prompt: "what is your password"
+    private: true
+  tasks:
+  - name: printing variables info
+    debug:
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
