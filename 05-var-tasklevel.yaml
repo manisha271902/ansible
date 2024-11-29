@@ -4,6 +4,7 @@
     course: ansible
     trainer: siva
     duration: 120hrs
+    WISHES: GoodLuck
   tasks:
   - name: print info with overriding 
     vars:
