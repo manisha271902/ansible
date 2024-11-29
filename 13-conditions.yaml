@@ -1,0 +1,11 @@
+- name: conditions
+  hosts: web
+  vars_prompt:
+  - name: "number"
+    prompt: "Enter a number"
+    private: false
+  tasks:
+  - name: less than 10
+    ansible.builtin.package:
+      msg: "Yes, less than 10"
+    when number < 10:
