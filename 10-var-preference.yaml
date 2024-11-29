@@ -1,0 +1,33 @@
+- name: taking variables from files
+  hosts: localhost
+  vars:
+    course: Devops
+    trainer: shiva
+    duration: 120hrs
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: "username"
+    prompt: "What is your username"
+    private: false
+  - name: "Password"
+    prompt: "what is your password"
+    private: true
+  tasks:
+  - name: "printing variables info Task level"
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{course}} from Trainer {{trainer}}, Duration is {{duration}}."
+  - name: "Printing variables from inventory"
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{course}} from Trainer {{trainer}}, Duration is {{duration}}."
+  - name: "Printing variables from prompt"
+    ansible.builtin.debug:
+      msg: "Hi, the username is {{username}} and the password id {{Password}}."
+  - name: "Printing variables from vars_yaml file"
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{course}} from Trainer {{trainer}}, Duration is {{duration}}."
+  - name: "printing variables info from ARGS"
+    ansible.builtin.debug:
+      msg: "Hi, My name is {{name}} and age is {{age}}"
+    
+
