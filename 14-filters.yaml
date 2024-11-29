@@ -25,14 +25,12 @@
 
 - name: min
   hosts: localhost
-  age:
-  - 14
-  - 25
-  - 16
+  vars:
+    age=[21,33,89,9,56]
   tasks:
   - name: min age
     ansible.builtin.debug:
-      msg: "min age {{age | min}}"
+      msg: "min age {{age | min}}, max age is {{age | max}}"
 
 # - name: max
 #   hosts: localhost
