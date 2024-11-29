@@ -9,5 +9,5 @@
     private: true
   tasks:
   - name: printing variables info
-    debug:
+    ansible.builtin.debug:
       msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
