@@ -1,0 +1,10 @@
+- name: loops
+  hosts: localhost
+  tasks:
+  - name: install packages
+    ansible.builtin.package:
+      msg: {{item}}
+      state: latest
+    loop:
+    - ngnix
+    - mysql
