@@ -45,10 +45,15 @@
 
 - name: Dict to list
   hosts: localhost
-  Experience: #map/dict
+  vars:
+   Experience: #map/dict
       devops: 2
       testing: 3
   tasks:
+  - name: "COnvert dict to list"
+    ansible.builtin.debug:
+      msg: "before conversion, dict is  {{Experience}}"
+
   - name: "COnvert dict to list"
     ansible.builtin.debug:
       msg: "the converted list is  {{Experience | dict2items}}"
@@ -56,11 +61,15 @@
 
 - name: list to dict
   hosts: localhost
-  Tools: #list
+  vars:
+    Tools: #list
     - Ansible
     - Jenkins
     - terraform
-
+  tasks:
+  - name: "COnvert list to dict"
+    ansible.builtin.debug:
+      msg: "before conversion, dlist is  {{Experience}}"
   tasks:
   - name: "COnvert list to dict"
     ansible.builtin.debug:
