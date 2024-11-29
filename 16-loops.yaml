@@ -7,5 +7,5 @@
       name: "{{item}}"
       state: latest
     loop:
-    - ngnix
+    - nginx
     - mysql
