@@ -1,4 +1,4 @@
-- name: loops
+- name: install pack
   hosts: web
   become: yes
   tasks:
