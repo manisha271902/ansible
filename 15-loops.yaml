@@ -3,8 +3,8 @@
   tasks:
   - name: loop printing
     ansible.builtin.debug:
-      msg: "{{item}}"
-    loops:
+      msg: " Hello my dear {{item}}"
+    loop:
     - manisha
     - cherry
     - pooja
