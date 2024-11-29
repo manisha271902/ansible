@@ -12,7 +12,9 @@
 
   tasks:
   - name: "printing variables and the preference is"
+    vars:
+      WISHES: wishes from task variable
     ansible.builtin.debug:
-      msg: "Hi, and the variable is from {{WISHES}}"
+      msg: "Hi,  {{WISHES}}"
   
 
