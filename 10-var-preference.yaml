@@ -7,7 +7,7 @@
   vars_prompt:
   - name: WISHES
     prompt: Enter your Wishes
-    private=false
+    private: false
     
 
   tasks:
