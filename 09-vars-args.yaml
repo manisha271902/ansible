@@ -1,0 +1,6 @@
+- name : Get variable values from ARgs
+  hosts: localhost
+  tasks:
+  - name: print variable info
+    ansible.builtin.debug:
+      msg: "Hi my name is {{Name}} and age is {{25}}"
