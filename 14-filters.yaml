@@ -1,0 +1,6 @@
+- name: conditions
+  hosts: localhost
+  tasks:
+  - name: default value
+    ansible.builtin.debug:
+      msg: "Hi {{hurray | default('cherry')}}"
