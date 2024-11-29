@@ -12,5 +12,5 @@
     Realproject: true
   tasks:
   - name: Print the Info
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "course is {{course}} toolas are {{Tools}} experinece is {{Experience}} and is it real projhect {{Realproject}}"
