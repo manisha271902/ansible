@@ -17,7 +17,7 @@
 - name: lower case
   hosts: localhost
   vars:
-    hurray: cherry
+    hurray: MANISHA
   tasks:
   - name: lower
     ansible.builtin.debug:
