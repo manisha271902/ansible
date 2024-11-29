@@ -1,5 +1,5 @@
 - name: loops
-  hosts: localhost
+  hosts: web
   tasks:
   - name: install packages
     ansible.builtin.package:
