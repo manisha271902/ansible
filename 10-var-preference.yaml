@@ -1,7 +1,7 @@
 - name: taking variables from files
   hosts: localhost
-  vars:
-    WISHES: "Good Luck from play variable"
+  # vars:
+  #   WISHES: "Good Luck from play variable"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
