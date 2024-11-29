@@ -4,3 +4,7 @@
   - name: default value
     ansible.builtin.debug:
       msg: "Hi {{hurray | default('cherry')}}"
+
+  - name: upper case
+    ansible.builtin.debug:
+      msg: "Hi {{ hurray | upper }}"
