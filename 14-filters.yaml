@@ -43,7 +43,7 @@
   tasks:
   - name: min age
     ansible.builtin.debug:
-      msg: "max nage {{age | max}}"
+      msg: "maximum nage {{age | max}}"
 
 - name: Dict to list
   hosts: localhost
