@@ -23,7 +23,7 @@
     ansible.builtin.debug:
       msg: "Hi {{hurray | lower}}"
 
-- name: MIn
+- name: min
   hosts: localhost
   age:
   - 14
@@ -34,7 +34,7 @@
     ansible.builtin.debug:
       msg: "=min age {{age | min}}"
 
-- name: Inmax
+- name: max
   hosts: localhost
   age:
   - 14
@@ -43,7 +43,7 @@
   tasks:
   - name: min age
     ansible.builtin.debug:
-      msg: "max nage {{age | mimaxn}}"
+      msg: "max nage {{age | max}}"
 
 - name: Dict to list
   hosts: localhost
