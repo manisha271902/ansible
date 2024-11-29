@@ -22,3 +22,48 @@
   - name: lower
     ansible.builtin.debug:
       msg: "Hi {{hurray | lower}}"
+
+- name: MIn
+  hosts: localhost
+  age:
+  - 14
+  - 25
+  - 16
+  tasks:
+  - name: min age
+    ansible.builtin.debug:
+      msg: "=min age {{age | min}}"
+
+- name: Inmax
+  hosts: localhost
+  age:
+  - 14
+  - 25
+  - 16
+  tasks:
+  - name: min age
+    ansible.builtin.debug:
+      msg: "max nage {{age | mimaxn}}"
+
+- name: Dict to list
+  hosts: localhost
+  Experience: #map/dict
+      devops: 2
+      testing: 3
+  tasks:
+  - name: "COnvert dict to list"
+    ansible.builtin.debug:
+      msg: "the converted list is  {{Experience | dict2items}}"
+
+
+- name: list to dict
+  hosts: localhost
+  Tools: #list
+    - Ansible
+    - Jenkins
+    - terraform
+
+  tasks:
+  - name: "COnvert list to dict"
+    ansible.builtin.debug:
+      msg: "the converted list is  {{Experience | items2dict}}"
