@@ -43,25 +43,25 @@
 #     ansible.builtin.debug:
 #       msg: "maximum nage {{age | max}}"
 
-# - name: Dict to list
-#   hosts: localhost
-#   Experience: #map/dict
-#       devops: 2
-#       testing: 3
-#   tasks:
-#   - name: "COnvert dict to list"
-#     ansible.builtin.debug:
-#       msg: "the converted list is  {{Experience | dict2items}}"
+- name: Dict to list
+  hosts: localhost
+  Experience: #map/dict
+      devops: 2
+      testing: 3
+  tasks:
+  - name: "COnvert dict to list"
+    ansible.builtin.debug:
+      msg: "the converted list is  {{Experience | dict2items}}"
 
 
-# - name: list to dict
-#   hosts: localhost
-#   Tools: #list
-#     - Ansible
-#     - Jenkins
-#     - terraform
+- name: list to dict
+  hosts: localhost
+  Tools: #list
+    - Ansible
+    - Jenkins
+    - terraform
 
-#   tasks:
-#   - name: "COnvert list to dict"
-#     ansible.builtin.debug:
-#       msg: "the converted list is  {{Experience | items2dict}}"
+  tasks:
+  - name: "COnvert list to dict"
+    ansible.builtin.debug:
+      msg: "the converted list is  {{Experience | items2dict}}"
