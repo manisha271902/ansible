@@ -1,0 +1,6 @@
+- name: taking variables from files
+  hosts: localhost
+  tasks:
+  - name: "printing variables info"
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{course}} from Trainer {{trainer}}, Duration is {{duration}}."
