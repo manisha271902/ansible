@@ -10,6 +10,15 @@
   vars:
     hurray: cherry
   tasks:
-  - name: default value
+  - name: upper
     ansible.builtin.debug:
       msg: "Hi {{hurray | upper}}"
+
+- name: lower case
+  hosts: localhost
+  vars:
+    hurray: cherry
+  tasks:
+  - name: lower
+    ansible.builtin.debug:
+      msg: "Hi {{hurray | lower}}"
