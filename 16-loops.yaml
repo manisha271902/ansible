@@ -3,7 +3,7 @@
   tasks:
   - name: install packages
     ansible.builtin.package:
-      msg: {{item}}
+      msg: "{{item}}"
       state: latest
     loop:
     - ngnix
