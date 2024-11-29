@@ -79,7 +79,7 @@
 - name : remove duplicates
   hosts: localhost
   vars:
-    age: [21,,21,33,89,9,56,9]
+    age: [21,21,33,89,9,56,9]
   tasks:
   - name: remove duplicates
     ansible.builtin.debug:
