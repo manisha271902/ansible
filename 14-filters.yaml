@@ -62,18 +62,19 @@
 - name: list to dict
   hosts: localhost
   vars:
-    Tools: #list
-    - Ansible
-    - Jenkins
-    - terraform
+    my_list:
+    - {'key': 'Course', 'value': 'Ansbile'}
+    - {'key': 'Trainer', 'value': 'Sivakumar'}
+    - {'key': 'Duration', 'value': '120hr'}
+    - {'key': 'timings',  'value': '7:15IST'}
   tasks:
   - name: "COnvert list to dict"
     ansible.builtin.debug:
-      msg: "before conversion, dlist is  {{Tools}}"
+      msg: "before conversion, dlist is  {{my_list}}"
   tasks:
   - name: "COnvert list to dict"
     ansible.builtin.debug:
-      msg: "the converted list is  {{Tools | items2dict}}"
+      msg: "the converted list is  {{my_list | items2dict}}"
 
 
 - name : remove duplicates
