@@ -6,6 +6,6 @@
     private: false
   tasks:
   - name: less than 10
-    ansible.builtin.package:
+    ansible.builtin.debug:
       msg: "Yes, less than 10"
     when number < 10:
