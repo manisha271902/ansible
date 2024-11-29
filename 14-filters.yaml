@@ -26,7 +26,7 @@
 - name: min
   hosts: localhost
   vars:
-    age=[21,33,89,9,56]
+    age: [21,33,89,9,56]
   tasks:
   - name: min age
     ansible.builtin.debug:
